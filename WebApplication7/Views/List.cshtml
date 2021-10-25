@@ -1,0 +1,27 @@
+﻿@using.WebApplication7.Data.Models
+@model IEnumerable<Flower> 
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>List</title>
+</head>
+<body>
+    <h2> Виды цветов </h2>
+    @{
+        foreach (var flower in Model)
+        {
+            <div>
+                <h2> Вид: @flower.name </h2>
+                <p> Цена:@flower.price.ToString("c")</p>
+            </div>
+        }
+    }
+</body>
+</html>
