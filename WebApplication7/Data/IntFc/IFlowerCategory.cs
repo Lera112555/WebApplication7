@@ -9,5 +9,5 @@ namespace WebApplication7.Data.IntFc
    public interface IFlowerCategory
     {
         IEnumerable<Category> AllCategories { get; }
-    }
+    } 
 }

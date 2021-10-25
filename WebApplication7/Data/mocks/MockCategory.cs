@@ -12,7 +12,7 @@ namespace WebApplication7.Data.mocks
         public IEnumerable<Category> AllCategories
         {
             get
-            {
+            { 
                 return new List<Category>
                 {
                     new Category {categoryName = "Полевые цветы", desc="Новинка"},

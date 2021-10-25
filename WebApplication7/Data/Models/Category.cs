@@ -10,6 +10,6 @@ namespace WebApplication7.Data.Models
         public int id { get; set; }
         public string categoryName { get; set; }
         public string desc { get; set; }
-        public List<Flower> flowers { get; set; }
+        public List<Flower> flowers { get; set; } 
     }
 }

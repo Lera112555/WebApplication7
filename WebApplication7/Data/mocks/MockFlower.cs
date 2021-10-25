@@ -12,7 +12,7 @@ namespace WebApplication7.Data.mocks
         private readonly IFlowerCategory _categoryFlowers = new MockCategory(); 
         public IEnumerable<Flower> Flowers
         {
-            get
+            get 
             {
                 return new List<Flower>
                 {

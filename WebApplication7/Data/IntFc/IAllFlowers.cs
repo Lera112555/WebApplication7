@@ -12,4 +12,4 @@ namespace WebApplication7.Data.IntFc
         IEnumerable<Flower> getFavFlowers { get; set; }
         Flower getObjectCar(int flowerId); 
     }
-}
+} 

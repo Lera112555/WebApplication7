@@ -8,7 +8,7 @@ using WebApplication7.Data.IntFc;
 namespace WebApplication7.Controllers
 {
     public class FlowerController : Controller 
-    {
+    { 
         private readonly IAllFlowers _allFlowers;
         private readonly IFlowerCategory _allCategories; 
         
