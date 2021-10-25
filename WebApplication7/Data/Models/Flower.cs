@@ -16,6 +16,6 @@ namespace WebApplication7.Data.Models
         public bool isFavorite { get; set; }
         public bool availble { get; set; }
         public int categoryID { get; set; }
-        public virtual Category Category { get; set; }
+        public virtual Category Category { get; set; } 
     }
 }
