@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebApplication7.Data.IntFc;
+using WebApplication7.ViewModels;
 
 namespace WebApplication7.Controllers
 {
@@ -20,8 +21,11 @@ namespace WebApplication7.Controllers
 
         public ViewResult List()
         {
-            var flowers = _allFlowers.Flowers; 
-            return View(); 
+            ViewBag.Title = "Страница с цветами"; 
+            FlowerListViewModel obj = new FlowerListViewModel();
+            obj.allFlowers = _allFlowers.Flowers;
+            obj.flowerCategory = "Цветы"; 
+            return View(obj); 
         }
     }
 }

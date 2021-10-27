@@ -28,6 +28,7 @@ namespace WebApplication7
             services.AddMvc();
             services.AddTransient<IAllFlowers, MockFlower>();
             services.AddTransient<IFlowerCategory, MockCategory>();
+            //services.AddMvc(option => option.EnableEndpointRouting = false);
 
         }
 
@@ -56,6 +57,7 @@ namespace WebApplication7
             {
                 endpoints.MapRazorPages();
             });
+            //app.UseMvcWithDefaultRoute(); 
         }
     }
 }
